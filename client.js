@@ -18,7 +18,7 @@ function left(user, channel, role) {
 };
 
 client.on('message', message => {
-    let prefix = '!';
+    let prefix = '!!';
     let channel = message.channel;
     let args = message.content.slice(prefix.length).trim().split(/ +/g);
     let command = args.shift().toLowerCase();
@@ -69,10 +69,10 @@ client.on('message', message => {
             } else {
                 message.author.send(`Dans le channel <#398568528288153610>, vous ne pouvez executer que les commandes :
 
-- **!pc** : Rejoindre ou quitter le grade \`💻 Joueur PC 💻\`
-- **!xbox** : Rejoindre ou quitter le grade \`🎮 Joueur Xbox 🎮\`
-- **!ps4** : Rejoindre ou quitter le grade \`🎮 Joueur PS4 🎮\`
-- **!pve** : Rejoindre ou quitter le grade \`🗺️ Sauver le Monde 🗺️\``)
+- **!!pc** : Rejoindre ou quitter le grade \`💻 Joueur PC 💻\`
+- **!!xbox** : Rejoindre ou quitter le grade \`🎮 Joueur Xbox 🎮\`
+- **!!ps4** : Rejoindre ou quitter le grade \`🎮 Joueur PS4 🎮\`
+- **!!pve** : Rejoindre ou quitter le grade \`🗺️ Sauver le Monde 🗺️\``)
         return message.delete(300);
             }
         }
