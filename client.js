@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 function join(user, channel, role) {
-    let str = `**${user} à rejoins le role ${role}**`;
+    let str = `**${user.username}** à rejoins le role **\`${role.name}\`**`;
     let e = new Discord.RichEmbed()
         .setColor(0x4ef442)
         .setDescription(str);
@@ -10,7 +10,7 @@ function join(user, channel, role) {
 };
 
 function left(user, channel, role) {
-    let str = `**${user} à quitté le role ${role}**`;
+    let str = `**${user.username}** à quitté le role **\`${role.name}\`**`;
     let e = new Discord.RichEmbed()
         .setColor(0xf44141)
         .setDescription(str);
