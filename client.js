@@ -89,7 +89,7 @@ client.on('guildMemberAdd', member => {
     member.guild.channels.get('398573574006505497').send(`\\🏹 Le commandant ${member.user} est arrivé sur le serveur ! Pense à lire les <#398568273282596866> ! \\🏹`);
 });
 client.on('guildMemberRemove', member => {
-    member.guild.channels.get('398573574006505497').send(`\\🏹 Le commandant ${member.user} à quitté le serveur ! Bonne chance pour le reste de l'aventure ! \\🏹`);
+    member.guild.channels.get('398573574006505497').send(`\\🏹 Le commandant \`${member.user.username}\` à quitté le serveur ! Bonne chance pour le reste de l'aventure ! \\🏹`);
 });
 client.on('ready', () => {
     console.log('Je suis Ray et je suis prète à fonctionner commandant !');
